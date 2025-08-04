@@ -1,0 +1,95 @@
+.section555
+  width: 100%
+  height: auto
+  display: grid
+  grid-template-rows: 1fr auto 
+  grid-template-columns: 1fr 1fr
+  background-color: #333333
+  gap: 15px
+  
+  .title
+    grid-column: 1/-1
+    padding-left: 55px
+    color: white
+    font-size: 45px
+
+  .nkar
+    display: flex
+    justify-content: center
+    align-items: center
+
+    .img
+      width: 500px
+      height: 500px
+      border-radius: 50%
+
+  .divs
+    width: 100%
+    display: grid
+    grid-template-rows: 1fr 1fr
+    grid-template-columns: 1fr 1fr
+    color: white
+
+    .text
+      width: 250px
+      height: auto
+      line-height: 1.8
+      font-weight: 100
+      font-size: 18px
+
+      .link
+        color: white
+        text-underline-offset: 5px
+    
+      .klorak
+        width: 100px
+        height: 100px
+        border-radius: 50%
+        background-color: #F58D54
+        margin-top: 200px
+
+    .viptext
+      width: 280px
+      height: 300px
+      background-color: #F58D54
+      padding: 15px
+      border-radius: 35px
+
+@media (max-width: 700px)
+
+  .section555
+    display: flex
+    flex-direction: column
+    padding-top: 100px
+
+    .title
+      width: 450px
+      font-size: 20px
+
+    .nkar
+
+      .img
+        width: 300px
+        height: 300px
+    
+    .divs
+      display: flex
+      flex-direction: column      
+      gap: 30px
+      margin-left: 80px
+
+      .text
+        width: 350px
+        font-weight: 400
+        line-height: 1.5
+      
+      .klor
+        height: 150px
+
+        .klorak
+          margin: 0
+      
+      .viptext
+        width: 350px
+        height: 200px
+        padding-top: 25px

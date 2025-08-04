@@ -1,0 +1,59 @@
+.section222
+  background-color: #333333
+  color: white
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  h1
+    font-size: 55px
+    font-weight: 500
+    padding-bottom: 55px
+    padding-top: 55px
+  .cards
+    display: grid
+    grid-template-rows: 1fr 1fr 
+    grid-template-columns: 1fr 1fr 1fr
+    gap: 25px
+
+    .card
+      width: 350px
+      height: 450px
+      background-color: white
+      position: relative
+      color: black
+      display: flex
+      align-items: center
+      border-radius: 15px
+      flex-direction: column
+      text-align: center
+      padding-top: 15px
+      .img
+        width: 250px
+        height: 250px
+        position: absolute
+        bottom: 15px
+        left: 50px
+        border: 8px solid #F58D54
+        border-radius: 50%
+      .title
+        font-size: 30px
+        font-weight: 100
+        font-style: none
+      p
+        padding: 5px
+        font-style: italic
+      .gic
+        width: 250px
+        height: 3px
+        background-color: #DDDDDD
+
+@media (max-width: 700px)
+  .section222
+    h1
+      width: 450px
+      font-size: 40px
+      text-align: center
+    .cards
+      display: flex
+      flex-direction: column

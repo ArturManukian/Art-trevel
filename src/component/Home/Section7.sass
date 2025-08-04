@@ -1,0 +1,60 @@
+.section7
+  width: 100%
+  min-height: 100vh
+  background-color: #333333
+  text-align: center
+  color: white
+
+  h1
+    font-size:  45px
+    padding-top: 80px
+    padding-bottom: 40px
+
+  .border
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: 30px
+
+    .radius
+      background-color: white
+      border-radius: 30px
+      display: flex
+      align-items: start
+      flex-direction: column
+      width: 300px
+      height: 350px
+      padding: 30px
+
+      h2
+        color: black
+        font-size: 25px
+        font-weight: 500
+        margin-top: 20px
+
+      .partret
+        width: 100px
+        height: 100px
+        border-radius: 50%
+
+      p
+        color: #808080
+        text-align: left
+        margin-top: 20px
+        line-height: 2
+      a
+        color: black
+        font-size: 15px
+        text-underline-offset: 8px
+        &:hover
+          text-decoration-color: #808080
+  .aline
+    font-size: 25px
+    margin-top: 30px
+    
+@media (max-width: 700px)
+  
+  .section7
+    height: 1500px
+    .border
+      flex-direction: column

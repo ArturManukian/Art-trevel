@@ -1,0 +1,65 @@
+.section9
+  width: 100%
+  min-height: 100vh
+  background-color: #333333
+  color: white
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: 40px
+
+  .boxing
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    grid-template-rows: repeat(3, auto)
+    gap: 40px
+    max-width: 1000px
+    width: 100%
+
+  .box
+    color: white
+    padding: 30px
+    width: 100%
+    width: 500px
+    height: 250px
+
+    .u-svg-content
+      fill: #F58D54
+      width: 40px
+      height: 40px
+      margin-bottom: 20px
+
+    p
+      font-size: 20px
+      font-weight: 200
+      margin-bottom: 10px
+
+    h1
+      font-size: 18px
+      font-weight: bold
+
+@media (max-width: 700px)
+  .section9
+    padding: 20px
+
+    .boxing
+      grid-template-columns: 1fr
+      grid-template-rows: auto
+      gap: 20px
+      justify-items: center
+
+    .box
+      width: 100%
+      max-width: 90vw
+      height: auto
+      padding: 20px
+
+      p
+        font-size: 16px
+
+      h1
+        font-size: 16px
+
+      .u-svg-content
+        width: 30px
+        height: 30px
