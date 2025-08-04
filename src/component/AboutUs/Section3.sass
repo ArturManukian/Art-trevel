@@ -1,0 +1,100 @@
+.section33
+  width: 100%
+  padding-top: 55px
+  background-color: #333333
+  color: white
+  text-align: center
+
+  h1
+    font-size: 55px
+    margin-bottom: 15px
+
+  p
+    font-size: 25px
+    font-weight: 100
+    margin-bottom: 15px
+
+  .boxing
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: repeat(2, 1fr)
+    gap: 10px
+    width: 80%
+    margin: auto
+    padding: 0
+
+  .teq
+    font-size: 15px
+    font-style: italic
+    padding-top: 25px
+
+  button
+    width: 250px
+    height: 70px
+    margin-top: 15px
+    font-size: 17px
+    color: white
+    border: none
+    border-radius: 45px
+    background-color: #F58D54
+    cursor: pointer
+
+    &:hover
+      color: black
+      background-color: white
+
+.box
+  position: relative
+  overflow: hidden
+  width: 100%
+  height: 300px
+
+  .img
+    width: 100%
+    height: 100%
+    object-fit: cover
+    display: block
+    transition: transform 1s ease
+    z-index: 1
+
+  .text
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    background: rgba(0, 0, 0, 0.4)
+    color: white
+    opacity: 0
+    z-index: 2
+    transition: opacity 1s ease
+
+  &:hover
+    .img
+      transform: scale(1.15)
+
+    .text
+      opacity: 1
+
+@media (max-width: 700px)
+
+  .section33
+    align-items: center
+    padding-top: 100px
+    display: flex
+    flex-direction: column
+
+    h1
+      font-size: 40px
+    
+    p
+      font-size: 20px
+      width: 68%
+      
+    .boxing
+      display: flex
+      flex-direction: column
