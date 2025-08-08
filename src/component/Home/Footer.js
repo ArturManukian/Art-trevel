@@ -13,7 +13,7 @@ function Footer(){
                 <h1 data-aos="fade-right">Sample text. Click to select the text box. Click again or double<br/> click to start editing the text.</h1>
             </div>
             <div className='site'>
-                <p>This site was created with the </p>
+                <p>This site was created with the Nicelodion</p>
             </div>
         </footer>
     )
